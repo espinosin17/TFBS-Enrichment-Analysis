@@ -31,7 +31,6 @@ freq_data # Verificar el dataframe
 # Recuperar los datos en un archivo .txt
 write.csv(x = freq_data, file = "./../Results/15_mostcommonTFsbyPromoter/pDMC1_AllTFsID.txt", row.names = FALSE)
 
-
 # Filtrar los 15 TFs más abundantes según promotor
 # Crear la funcion top15
 top15 <- function(datos){
@@ -85,10 +84,3 @@ ggplot(data_for_plot, aes(x = Protein.ID, y = Frequency, fill = promoter)) +
     panel.grid = element_blank(),
     panel.border = element_blank()
     )
-
-
-
-
-
-
-
